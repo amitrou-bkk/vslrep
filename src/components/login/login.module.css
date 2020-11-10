@@ -1,0 +1,8 @@
+.logInBox {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+    padding: 3em;
+    background-color: wheat;
+    width: 25%;
+    margin: 0px auto;
+}
