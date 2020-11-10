@@ -9,7 +9,7 @@ function App() {
   return (
       <Switch>
         <Route path="/" component={LogIn} exact />
-        <Route path="/Query" component={QueryDesign} exact />
+        <Route path={`${process.env.PUBLIC_URL}/Query`} component={QueryDesign} exact />
       </Switch>
   );
 }
