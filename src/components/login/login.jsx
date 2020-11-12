@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -48,7 +49,12 @@ const useStyles = makeStyles((theme) => ({
 
  function LogIn() {
   const classes = useStyles();
+  
+  const history = useHistory();
 
+  const login= () => {
+    history.push("/Query");
+  }
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -92,6 +98,7 @@ const useStyles = makeStyles((theme) => ({
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={login}
           >
             Sign In
           </Button>
