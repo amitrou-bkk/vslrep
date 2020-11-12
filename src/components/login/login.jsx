@@ -94,7 +94,6 @@ const useStyles = makeStyles((theme) => ({
             label="Remember me"
           />
           <Button
-            type="submit"
             fullWidth
             variant="contained"
             color="primary"
