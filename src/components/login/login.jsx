@@ -52,7 +52,8 @@ const useStyles = makeStyles((theme) => ({
   
   const history = useHistory();
 
-  const login= () => {
+  const login= (e) => {
+    e.preventDefault();
     history.push("/Query");
   }
   return (
